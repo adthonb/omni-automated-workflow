@@ -1,0 +1,26 @@
+[project]
+name = "omni-video"
+version = "1.0.0"
+description = "Shopee Affiliate Video & Facebook Reels Orchestration Workflow (Command -> Agent -> Skill)"
+readme = "README.md"
+authors = [
+    { name = "Bom Mongkon", email = "bomm.mongkon@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai>=2.20.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+omni-video = "omni_video.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
