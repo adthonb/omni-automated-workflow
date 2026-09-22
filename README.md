@@ -1,8 +1,33 @@
 # Omni Video Orchestrator
 
+[![Status: Under Process](https://img.shields.io/badge/Status-Under%20Process-orange)](#tech-stack)
+[![Python 3.14](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)](pyproject.toml)
+[![uv](https://img.shields.io/badge/uv-managed-DE5FE9?logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-API-8E75B2?logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+[![FFmpeg](https://img.shields.io/badge/FFmpeg-Audio-007808?logo=ffmpeg&logoColor=white)](https://ffmpeg.org/)
+[![Shopee](https://img.shields.io/badge/Shopee-Affiliate-EE4D2D?logo=shopee&logoColor=white)](https://shopee.co.th/)
+[![Facebook Reels](https://img.shields.io/badge/Facebook%20Reels-Meta%20Graph%20API-0866FF?logo=facebook&logoColor=white)](https://developers.facebook.com/documentation/video-api/guides/reels-publishing.md)
+
 Generate Thai Facebook Reels scripts and voiceovers from Shopee product links.
 
 Built with Python 3.14, [uv](https://github.com/astral-sh/uv), Google Gemini, and FFmpeg.
+
+> **Project Status: Under Process** — Phase 1 (scraping, scriptwriting, voiceover synthesis, and memory) is complete and operational. Phase 2 (automated 9:16 video generation and viral style learning) is in active development.
+
+---
+
+## Tech Stack
+
+| Component | Tech Stack |
+|---|---|
+| CLI & Orchestrator | Python 3.14, uv |
+| Shopee Product Scraper | Python 3.14 (`requests`), Shopee PDP & Shop APIs |
+| Transcript Generator | Google Gemini (`gemini-3.8-flash`), `google-genai` SDK |
+| Voiceover Synthesis (TTS) | Google Gemini (`gemini-3.1-flash-tts-preview`), FFmpeg |
+| Memory Manager | Structured Markdown (`MEMORY.md`), Python 3.14 |
+| Facebook Reels Publisher | Meta Graph API v26.0, Python 3.14 (`requests`) |
+| Video Generator (Phase 2) | Google Gemini (`gemini-omni-1.1-flash`), FFmpeg |
+| Viral Style Analyzer (Phase 2) | Google Gemini (`gemini-3.8-flash`), `google-genai` SDK |
 
 ---
 
